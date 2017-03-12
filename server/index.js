@@ -1,5 +1,6 @@
 'use strict';
 
+var http = require('http');
 const config = require('./config');
 const express = require('express');
 const bodyParser = require('body-parser');
@@ -8,7 +9,7 @@ const Nexmo = require('nexmo');
 const socketio = require('socket.io');
 
 const app = express();
-const server = app.listen(4000, () => {
+const server = app.listen(process.env.PORT || 3000, () => {
   console.log('Express server listening on port %d in %s mode', server.address().port, app.settings.env);
 });
 
