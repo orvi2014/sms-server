@@ -1,0 +1,18 @@
+{
+  "name": "sms",
+  "version": "0.0.1",
+  "description": "sms to your mobile phone",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Robat Das Orvi",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "ejs": "^2.5.6",
+    "express": "^4.15.2",
+    "nexmo": "^1.2.0",
+    "socket.io": "^1.7.3"
+  }
+}
